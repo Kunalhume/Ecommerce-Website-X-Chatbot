@@ -1,0 +1,14 @@
+step 1 : socketio:
+            user_message_evt: user_uttered
+            bot_message_evt: bot_uttered
+            session_persistence: true/false
+         In 'credentials.yml' file
+
+step 2 : rasa run --enable-api --cors "*" --debug
+
+step 3 : we different API details for out RASA Project
+         Now can connect our ChatBot to a website using the script
+
+step 4 : Now change the socket url port number to our rasa server's port number
+
+step 5 : python -m http.server
